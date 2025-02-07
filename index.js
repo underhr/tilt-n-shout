@@ -1,35 +1,35 @@
 const categories = [
-    "Fruits",
-    "Vegetables",
-    "Drinks",
-    "TV Shows",
-    "Movies",
-    "Brands",
-    "Ice Cream Flavors",
-    "Streaming Services",
-    "Coffee Shop Chains",
-    "Video Games",
-    "Apps on a Phone",
-    "Scary Movies (No Sequels)",
-    "Cake Flavors",
-    "Crayola Colors",
-    "Taylor Swift Songs",
-    "Juice Wrld Songs",
-    "Dog Breeds",
-    "Classic Books",
-    "TV Networks",
-    "Things That Are Red",
-    "Disney Movies",
-    "Spices/Seasonings",
-    "Types of Cheese",
-  ]
+  "Fruits",
+  "Vegetables",
+  "Drinks",
+  "TV Shows",
+  "Movies",
+  "Brands",
+  "Ice Cream Flavors",
+  "Streaming Services",
+  "Coffee Shop Chains",
+  "Video Games",
+  "Apps on a Phone",
+  "Scary Movies (No Sequels)",
+  "Cake Flavors",
+  "Crayola Colors",
+  "Taylor Swift Songs",
+  "Juice Wrld Songs",
+  "Dog Breeds",
+  "Classic Books",
+  "TV Networks",
+  "Things That Are Red",
+  "Disney Movies",
+  "Spices/Seasonings",
+  "Types of Cheese",
+]
   
-  let score1 = 0;
-  let score2 = 0;
-  let timer1 = 6;
-  let timer2 = 6;
+let score1 = 0;
+let score2 = 0;
+let timer1 = 10;
+let timer2 = 10;
   
-  let turn = 1;
+let turn = 1;
   
   function updateTable() {
     document.getElementById("p1Score").innerHTML = score1;
@@ -78,16 +78,16 @@ const categories = [
     document.getElementById("newCategory").style.display = "block";
     score1 = 0;
     score2 = 0;
-    timer1 = 6;
-    timer2 = 6;
+    timer1 = 10;
+    timer2 = 10;
     document.getElementById("start").innerHTML = "Start Time";
     clearInterval(secondInterval);
     updateTable();
   }
   
   function resetTime() {
-    timer1 = 6;
-    timer2 = 6;
+    timer1 = 10;
+    timer2 = 10;
     document.getElementById("start").innerHTML = "Start Time";
     clearInterval(secondInterval);
     document.getElementById("newCategory").style.display = "block";
@@ -108,7 +108,7 @@ const categories = [
         resetTime();
         newCategory();
       } else if (timer2 < 1) {
-        score1 += 2;
+        score1 += 1;
         resetTime();
         newCategory();
       }
