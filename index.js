@@ -17,6 +17,11 @@ const categories = [
     "Juice Wrld Songs",
     "Dog Breeds",
     "Classic Books",
+    "TV Networks",
+    "Things That Are Red",
+    "Disney Movies",
+    "Spices/Seasonings",
+    "Types of Cheese",
   ]
   
   let score1 = 0;
