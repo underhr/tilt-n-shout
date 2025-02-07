@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <title>Tilt N' Shout</title>
+</head>
+<body>
+    <div id="container">
+      <h1 id="category"></h1>
+      <button id="newCategory" onclick="newCategory()">New Category</button>
+      <table id="table">
+        <tr>
+          <th></th>
+          <th id="p1">Player 1</th>
+          <th id="p2">Player 2</th>
+        </tr>
+        <tr>
+          <th>Scores</th>
+          <th id="p1Score"></th>
+          <th id="p2Score"></th>
+        </tr>
+        <tr>
+          <th>Timer</th>
+          <th id="p1Timer"></th>
+          <th id="p2Timer"></th>
+        </tr>
+      </table>
+  
+      <div id="buttons">
+        <button id="newGame" onclick="newGame()">New Game</button>
+        <button id="pTurn" onclick="switchTurn()">P1</button>
+        <button id="start" onclick="startTime()">Start Time</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
