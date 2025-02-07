@@ -17,13 +17,17 @@
   
   #container {
     @include flexCenter;
+    display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 30px;
+    max-width: 100vw;
   }
   
   #buttons {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     gap: 5px;
   }
   
@@ -59,4 +63,13 @@
         text-decoration: underline;
         color: blue;
       }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #buttons {
+      flex-direction: column;
+      button {
+        width: 100%;
+      }
+    }
   }

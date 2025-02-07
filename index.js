@@ -7,6 +7,16 @@ const categories = [
     "Brands",
     "Ice Cream Flavors",
     "Streaming Services",
+    "Coffee Shop Chains",
+    "Video Games",
+    "Apps on a Phone",
+    "Scary Movies (No Sequels)",
+    "Cake Flavors",
+    "Crayola Colors",
+    "Taylor Swift Songs",
+    "Juice Wrld Songs",
+    "Dog Breeds",
+    "Classic Books",
   ]
   
   let score1 = 0;
